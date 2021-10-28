@@ -16,7 +16,7 @@ class Details extends Component {
             <View style={styles.container}>
                 <View style={{
                     display: 'flex',
-                    width: '30%',
+                    width: '40%',
                     height: '20%',
                     justifyContent: "center",
                     alignItems: 'center',
@@ -25,7 +25,9 @@ class Details extends Component {
                 </View>
                 <Text style={styles.informations}>Login: {user.username}</Text>
                 <Text style={styles.informations}>Password: {user.password}</Text>
-                <Text style={styles.informations}>Registered: {user.date}</Text>
+                <Text style={styles.informations}>Registered: </Text>
+                <Text style={styles.informations}>{user.date}</Text>
+
             </View>
         );
     }
@@ -44,8 +46,8 @@ const styles = StyleSheet.create({
         fontSize: height * 0.03
     },
     image: {
-        width: '100%',
         height: '100%',
+        width: '100%',
         resizeMode: 'cover',
     }
 })

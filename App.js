@@ -12,7 +12,7 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="Main" component={Main} options={MainNav}/>
+                <Stack.Screen name="Main" component={Main} options={{headerShown: false}}/>
                 <Stack.Screen name="Users" component={Users} options={UsersNav}/>
                 <Stack.Screen name="Details" component={Details} options={UsersNav}/>
             </Stack.Navigator>
@@ -20,18 +20,7 @@ export default function App() {
     );
 }
 const {height} = Dimensions.get('window')
-const MainNav = {
-    title: 'Register App',
-    headerStyle: {
-        backgroundColor: '#303F9F',
-        height: '30vh',
-    },
-    headerTintColor: '#ffffff',
-    headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: 0.05 * height,
-    }
-}
+
 const UsersNav = {
     title: 'Admin Page',
     headerStyle: {

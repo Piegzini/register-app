@@ -19,8 +19,8 @@ const {height} = Dimensions.get('window')
 const styles = StyleSheet.create({
     text: {
         fontSize: height * 0.025,
-        margin: '10px',
-        fontWeight: 'Bold',
+        margin: 10,
+        fontWeight: 'bold',
     }
 })
 Button.propTypes = {

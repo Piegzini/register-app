@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         display: 'flex',
         flexDirection: 'row',
-        margin: '2px',
     },
     cell: {
         flex: 1,
